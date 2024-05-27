@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Compra de Entradas de Cine</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <h1>Cinemas</h1>
+    <h2>Compra tus Entradas</h2>
+    
+    <p>Bienvenido a la página de compra de entradas de Cine Fantástico. Aquí puedes reservar tus asientos para las próximas funciones.</p>
+    <p>Para más información sobre nuestras películas y horarios, visita <a href="https://www.ejemplodecine.com">nuestro sitio web</a> o consulta nuestra <a href="#tabla-peliculas">tabla de películas</a> a continuación.</p>
+
+    <img src="./img/decorativa.png" alt="" style="width:250px; height:250px;"> <!-- Imagen no decorativa -->
+
+    <div class="container">
+        <div id="contenido">
+            <div class="comprar-entrada">
+                <form id="nueva-entrada">
+                    <h3>Datos de la Compra</h3>
+                    <div class="form-group">
+                        <label for="pelicula">Película:</label>
+                        <input type="text" id="pelicula" name="pelicula" placeholder="Nombre de la Película" aria-required="true">
+                    </div>
+                    <div class="form-group">
+                        <label for="asientos">Número de Asientos:</label>
+                        <input type="number" id="asientos" name="asientos" placeholder="Cantidad de Asientos" aria-required="true">
+                    </div>
+                    <div class="form-group">
+                        <label for="fecha">Fecha:</label>
+                        <input type="date" id="fecha" name="fecha" aria-required="true">
+                    </div>
+                    <div class="form-group">
+                        <label for="hora">Hora:</label>
+                        <input type="time" id="hora" name="hora" aria-required="true">
+                    </div>
+                    <div class="form-group">
+                        <button type="submit">Comprar Entradas</button>
+                    </div>
+                </form>
+            </div>
+            <div>
+                <h3 id="administra">Administra tus Compras</h3>
+                <ul id="compras" class="list-group lista-compras"></ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container table-container">
+        <h3 id="tabla-peliculas">Tabla de Películas</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th scope="col">Película</th>
+                    <th scope="col">Horario</th>
+                    <th scope="col">Duración</th>
+                    <th scope="col">Precio</th>
+                    <th scope="col">Calificación</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td scope="row">Inception</td>
+                    <td>18:00</td>
+                    <td>2h 28m</td>
+                    <td>$10</td>
+                    <td>8.8/10</td>
+                </tr>
+                <tr>
+                    <td scope="row">Avengers</td>
+                    <td>20:00</td>
+                    <td>2h 23m</td>
+                    <td>$12</td>
+                    <td>8.4/10</td>
+                </tr>
+                <tr>
+                    <td scope="row">La La Land</td>
+                    <td>22:00</td>
+                    <td>2h 8m</td>
+                    <td>$8</td>
+                    <td>8.0/10</td>
+                </tr>
+                <tr>
+                    <td scope="row">The Dark Knight</td>
+                    <td>16:00</td>
+                    <td>2h 32m</td>
+                    <td>$11</td>
+                    <td>9.0/10</td>
+                </tr>
+                <tr>
+                    <td scope="row">Interstellar</td>
+                    <td>14:00</td>
+                    <td>2h 49m</td>
+                    <td>$13</td>
+                    <td>8.6/10</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+
+    <div class="container">
+        <h3>Imágenes del Cine</h3>
+        <img src="./img/promocion.jpg" alt="Promoción de los lunes 15% de descuento en el combo #2. Cine Cinemas.">
+       
+        <img src="./img/Sala-de-cine.jpg" alt="sala del cine Cinemas proyectando una pelicula del estudio DreamWorks." style="width:300px; height:200px;"> <!-- Imagen con texto -->
+    </div>
+
+    <div class="container">
+        <h3>Video Promocional</h3>
+        <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/cWP-pksRiLA?si=sgG7G6oigVhoCkSk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+        <p>Para una mejor experiencia, activa los subtítulos en el video. También ofrecemos una <a href="transcript.html">transcripción completa</a> del contenido visual.</p>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
